@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pronostico{
+    padding: 10px;
+    width: 90vw;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.pronostico section{
+    background: rgba(8, 251, 235, 0.233);
+    width: 300px;
+    height: 500px;
+}
+.pronostico .temp-now{
+    border-radius: 10px;
+    width: 250px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 40% 60%;
+}
+.temp-now .temp{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.temp .temp-act{
+    font-size: 6.5em;
+}
+.temp .temp-min,.temp .temp-max{
+    font-size: 1.2em;
+}
+.pronostico .description-temp{
+    grid-column: 1/span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 5px;
+    font-size: 1.2em;
+}
+
+
+.pronostico .temp-pronostico{
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.temp-pronostico .nexts-days{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    background: rgba(8, 251, 235, 0.233);
+    width: 90%;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 10px;
+}
+.nexts-days div{
+    position: relative;
+    font-size: 1.2em;
+}
+.nexts-days span{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    left: 0;
+    background: #0001;
+    font-size: 1.7em;
+}
